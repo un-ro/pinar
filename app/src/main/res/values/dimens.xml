@@ -1,0 +1,30 @@
+<resources>
+    <!-- Dimen(sp) -->
+    <dimen name="dimen_8_sp">8sp</dimen>
+    <dimen name="dimen_10_sp">10sp</dimen>
+    <dimen name="dimen_12_sp">12sp</dimen>
+    <dimen name="dimen_13_sp">13sp</dimen>
+    <dimen name="dimen_14_sp">14sp</dimen>
+    <dimen name="dimen_15_sp">15sp</dimen>
+    <dimen name="dimen_16_sp">16sp</dimen>
+    <dimen name="dimen_19_sp">19sp</dimen>
+    <dimen name="dimen_23_sp">23sp</dimen>
+    <dimen name="dimen_24_sp">24sp</dimen>
+    <dimen name="dimen_32_sp">32sp</dimen>
+    <dimen name="dimen_33_sp">33sp</dimen>
+    <dimen name="dimen_46_sp">46sp</dimen>
+    <dimen name="dimen_58_sp">58sp</dimen>
+    <dimen name="dimen_93_sp">93sp</dimen>
+
+    <!-- Dimen(dp) -->
+    <dimen name="dimen_4_dp">4dp</dimen>
+    <dimen name="dimen_8_dp">8dp</dimen>
+    <dimen name="dimen_12_dp">12dp</dimen>
+    <dimen name="dimen_16_dp">16dp</dimen>
+    <dimen name="dimen_20_dp">20dp</dimen>
+    <dimen name="dimen_24_dp">24dp</dimen>
+    <dimen name="dimen_28_dp">28dp</dimen>
+    <dimen name="dimen_30_dp">30dp</dimen>
+    <dimen name="dimen_32_dp">32dp</dimen>
+    <dimen name="dimen_36_dp">36dp</dimen>
+</resources>

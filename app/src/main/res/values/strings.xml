@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">PINAR</string>
+    <string name="app_version" translatable="false">0.5-alpha</string>
+
+    <!-- Bottom Menu Main -->
+    <string name="menu_main_building">Gedung</string>
+    <string name="menu_main_map">Map</string>
+
+    <!-- Home Screen -->
+    <string name="welcome">Pilih gedung untuk navigasi</string>
+    <string name="building_name">Gedung %1$s</string>
+
+    <!-- Building Detail -->
+    <string name="lbl_item_floor">Lantai %1$d</string>
+    <string name="cd_image">Photo of %1$s Building</string>
+    <string name="destination">Pilih sebagai Tujuan</string>
+
+    <!-- Info -->
+    <string name="distance">%1$s m</string>
+    <string name="back">Kembali</string>
+    <string name="retry">Ulangi</string>
+    <string name="error_occurred">Terjadi Error</string>
+    <string name="error_template" translatable="false">Error: %1$s</string>
+    <string name="error_fetch_data">Error: Pastikan anda terhubung ke Internet.</string>
+
+    <string name="warning_scanner_title">Gedung / Lantai Salah</string>
+    <string name="warning_scanner">Pastikan pada lantai yang sama dengan tujuan</string>
+
+    <string-array name="type" translatable="false">
+        <item>Academy</item>
+        <item>Admin</item>
+        <item>Utility</item>
+    </string-array>
+
+    <string-array name="type_node" translatable="false">
+        <item>Room</item>
+        <item>Path</item>
+        <item>Start</item>
+    </string-array>
+
+    <string-array name="type_neighbour" translatable="false">
+        <item>Room</item>
+        <item>Path</item>
+    </string-array>
+
+    <!-- Admin -->
+    <string name="success_add">Add Success</string>
+    <string name="failed_add">Add Failed</string>
+
+    <!-- API Key -->
+    <string name="oauth">752144579370-opg74ivb3kfdngqo2ffg4d4dr4h9l76h.apps.googleusercontent.com</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/customSplashFragment">
+    <fragment
+        android:id="@+id/customSplashFragment"
+        android:name="com.unero.pinar.presentation.splash.CustomSplashFragment"
+        android:label="Splash Screen"
+        tools:layout="@layout/fragment_custom_splash" >
+        <action
+            android:id="@+id/toHome"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/customSplashFragment"
+            app:popUpToInclusive="true"
+            app:exitAnim="@anim/fade_out"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.unero.pinar.presentation.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/toAddBuildingFragment"
+            app:destination="@id/homeFormFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"/>
+        <action
+            android:id="@+id/toDetailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/sceneFragment"
+        android:name="com.unero.pinar.presentation.scene.SceneFragment"
+        android:label="AR SceneView"
+        tools:layout="@layout/fragment_scene" >
+        <argument
+            android:name="destination"
+            app:argType="com.unero.pinar.data.model.POI" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFormFragment"
+        android:name="com.unero.pinar.presentation.home.add.HomeFormFragment"
+        android:label="Home Form"
+        tools:layout="@layout/fragment_home_form" >
+        <argument
+            android:name="building"
+            app:argType="com.unero.pinar.data.model.Building"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.unero.pinar.presentation.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="building"
+            app:argType="com.unero.pinar.data.model.Building" />
+        <action
+            android:id="@+id/toScanFragment"
+            app:destination="@id/scanFragment" />
+        <action
+            android:id="@+id/toEditBuilding"
+            app:destination="@id/homeFormFragment" />
+        <action
+            android:id="@+id/toTestFragment"
+            app:destination="@id/trackTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.unero.pinar.presentation.maps.MapsFragment"
+        android:label="Maps"
+        tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/addNodeFragment"
+        android:name="com.unero.pinar.presentation.detail.add.AddNodeFragment"
+        android:label="Add Node"
+        tools:layout="@layout/fragment_add_node" >
+        <argument
+            android:name="floor"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.unero.pinar.presentation.scan.ScanFragment"
+        android:label="Scan"
+        tools:layout="@layout/fragment_scan" >
+        <argument
+            android:name="destination"
+            app:argType="com.unero.pinar.data.model.POI"
+            app:nullable="true" />
+        <action
+            android:id="@+id/toSceneFragment"
+            app:destination="@id/sceneFragment"
+            app:popUpTo="@id/detailFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/toAddNodeFragment"
+            app:destination="@id/addNodeFragment"
+            app:popUpTo="@id/detailFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/trackTestFragment"
+        android:name="com.unero.pinar.presentation.tracktest.TrackTestFragment"
+        android:label="Tracking Test"
+        tools:layout="@layout/fragment_track_test" >
+        <argument
+            android:name="buildingId"
+            app:argType="string" />
+    </fragment>
+</navigation>
